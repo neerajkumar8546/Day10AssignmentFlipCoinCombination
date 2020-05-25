@@ -7,7 +7,7 @@ declare -A resultHT
 declare -A resultTH
 declare -A resultTT
 
-read -p "How many time do you want to toss" n
+read -p "Enter Number you want to toss" n
 
 
 for (( i=0;i<$n;i++))
@@ -47,7 +47,7 @@ echo "${resultTT[@]}"
 echo "${resultTH[@]}"
 
 
-echo The win percentage of each combination in the doublet coin toss:
+echo "win percentage of the doublet coin toss:
 
 perHH=`echo "scale=2;((${resultHH[@]} / $n))" | bc -l`
 echo "Percentage Of HH  : " `echo "scale=2;(($perHH * 100))" | bc -l` "%"
