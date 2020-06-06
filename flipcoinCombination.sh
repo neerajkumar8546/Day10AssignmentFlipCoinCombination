@@ -36,7 +36,7 @@ done
 echo "Head : " "${resultHead[@]}"
 echo "Tails : " "${resultTail[@]}"
 
-perHead=`echo "scale=2;((${resultHead[@]} / $iteration))" | bc -l`
+perHead=`echo "scale=2;((${resultHead[@]} / $n))" | bc -l`
 echo "Percentage Of Head : " `echo "scale=2;(($perHead* 100))" | bc -l`
-perTail=`echo "scale=2;((${resultTail[@]} / $iteration))" | bc -l`
+perTail=`echo "scale=2;((${resultTail[@]} / $n))" | bc -l`
 echo "Percentage Of Tail : " `echo "scale=2;(($perTail* 100))" | bc -l`
